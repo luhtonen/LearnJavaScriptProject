@@ -23,4 +23,5 @@ var connect = require('connect'),
 
 var app = connect();
 app.use(serveStatic('../ch' + chapter));
+console.log('start service chapter ' + chapter + ' on port 5000: http://localhost:5000');
 app.listen(5000);
